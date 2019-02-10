@@ -22,7 +22,7 @@ class Board {
     fallDelay += delay
     if (leftHeld) _current = current.move(-1, 0)
     if (fallDelay > fallInterval) {
-      _current = current.fall()
+      _current = current.move(0, 1)
       fallDelay = 0.0
     }
   }
