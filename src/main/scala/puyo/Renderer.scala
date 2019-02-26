@@ -22,6 +22,7 @@ class Renderer(gc: GraphicsContext) {
         case PuyoColor.Gray => gc.fill = Color.Gray
         case PuyoColor.Yellow => gc.fill = Color.Yellow
         case PuyoColor.Magenta => gc.fill = Color.Magenta
+        case PuyoColor.Green => gc.fill = Color.Green
 
       }
       gc.fillOval(boba.x * CellSize, boba.y * CellSize, Renderer.CellSize, Renderer.CellSize)
