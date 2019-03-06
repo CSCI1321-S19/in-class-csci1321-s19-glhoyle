@@ -50,6 +50,7 @@ object Utility extends App {
         if (nx == ex && ny == ey) return steps
         // Dr. Lewis HATES it - return's One Weird Trick
         if ((nx >= 0 && ny >= 0 && nx < maze.length && ny < maze(nx).length) && maze(nx)(ny) == 0 && !visited(nx -> ny)) {
+          // use isClear for this line in graphic game code
           queue.enqueue((nx, ny, steps + 1))
           visited += nx -> ny
         }
@@ -57,6 +58,7 @@ object Utility extends App {
     }
     -100000000
   }
+  
   
   println(shortestPath(0, 0, 9, 9, maze))
   
